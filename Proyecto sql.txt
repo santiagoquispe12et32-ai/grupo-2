@@ -1,0 +1,26 @@
+﻿CREATE DATABASE Web_Furry;
+USE Web_Furry;
+
+
+CREATE TABLE Usuarios
+(
+id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+Nombre VARCHAR (15),
+Email VARCHAR(30),
+Contraseña VARCHAR(15),
+Tipo VARCHAR(15),
+Fecha_registro DATETIME
+);
+
+
+CREATE TABLE Mensajes
+(
+id_mensaje int auto_increment primary key,
+id_remitente int 
+);
+
+
+CREATE TABLE Direcciones_envios
+(
+id_
+);
