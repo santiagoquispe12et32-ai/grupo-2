@@ -1,3 +1,4 @@
+-- no me acordaba si la ñ la leia o no asi que
 use SpaceSurvivors;
 
 drop procedure if exists RegistrarJugador;
