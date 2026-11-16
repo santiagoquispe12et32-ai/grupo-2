@@ -107,7 +107,7 @@ end //
 create procedure RecargarArma(in p_id_sesion int, in p_id_arma int)
 begin
     update InventarioMunicion im
-    join Armas a on a.id_arma = im.id_arma
+    inner join Armas a on a.id_arma = im.id_arma
     set im.cantidad_actual = a.municion_max
     where im.id_sesion = p_id_sesion
       and im.id_arma = p_id_arma;
@@ -117,7 +117,7 @@ create procedure VerRanking()
 begin
     select j.nombre, s.puntaje_final, s.dificultad
     from Sesiones s
-    join Jugadores j on j.id_jugador = s.id_jugador
+    inner join Jugadores j on j.id_jugador = s.id_jugador
     order by s.puntaje_final desc
     limit 10;
 end //
