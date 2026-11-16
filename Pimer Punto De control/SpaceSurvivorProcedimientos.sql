@@ -1,4 +1,4 @@
--- no me acordaba si la ñ la leia o no asi que
+
 use SpaceSurvivors;
 
 drop procedure if exists RegistrarJugador;
@@ -6,7 +6,7 @@ drop procedure if exists IniciarSesion;
 drop procedure if exists FinalizarSesion;
 drop procedure if exists RegistrarEvento;
 drop procedure if exists CrearEnemigo;
-drop procedure if exists DanarEnemigo;
+drop procedure if exists DaniarEnemigo;
 drop procedure if exists CrearPowerUp;
 drop procedure if exists RecolectarPowerUp;
 drop procedure if exists AsignarArma;
@@ -43,11 +43,11 @@ create procedure RegistrarEvento(
     in p_id_sesion int,
     in p_id_tipo_evento int,
     in p_frame int,
-    in p_dano float,
+    in p_danio float,
     in p_puntos int)
 begin
-    insert into RegistrosCombates (id_sesion, id_tipo_evento, frame, dano, puntos)
-    values (p_id_sesion, p_id_tipo_evento, p_frame, p_dano, p_puntos);
+    insert into RegistrosCombates (id_sesion, id_tipo_evento, frame, danio, puntos)
+    values (p_id_sesion, p_id_tipo_evento, p_frame, p_danio, p_puntos);
 end //
 
 create procedure CrearEnemigo(
@@ -63,10 +63,10 @@ begin
 end //
 
 
-create procedure DanarEnemigo(in p_id_enemigo_instancia int, in p_dano float)
+create procedure DaniarEnemigo(in p_id_enemigo_instancia int, in p_danio float)
 begin
     update EnemigosInstancias
-    set vida_actual = greatest(vida_actual - p_dano, 0)
+    set vida_actual = greatest(vida_actual - p_danio, 0)
     where id_enemigo_instancia = p_id_enemigo_instancia;
 end //
 
