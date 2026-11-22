@@ -1,0 +1,5 @@
+ProyectoBseDeDatos Mono Game
+
+Comenze haciendo el DER y apartir de el codigo que habia hecho mi compañero llamado Benjamin en mono game se me ocurrieron varias ideas.
+
+Realice el DER el Jira ordene el github y coloque tareas para hacer en el jira como Diccionario de datos, BD, y los procedimientos los cuales voy a realizar 
