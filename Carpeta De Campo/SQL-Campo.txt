@@ -1,4 +1,5 @@
-Yo me encargue de hacer la base de datos en MySQL con la ayuda del DER que hizo mi compañero Santiago y ahí empecé a crear las tablas con su tipo de dato y relaciones y tuve que pone drop table y set FK checks para evitar que salga que una entidad ya existe, e hize los registros y estuve pensando que información pondría en cada columna.
+Yo me encargue de hacer la base de datos en MySQL con la ayuda del DER que hizo mi compañero Santiago y ahí empecé a crear las tablas con su tipo de dato, relaciones 
+y tuve que pone drop table y set FK checks para evitar que salga que una entidad ya existe, e hize los registros y estuve pensando que información pondría en cada columna.
 
 
 
