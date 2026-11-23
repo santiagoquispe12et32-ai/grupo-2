@@ -90,7 +90,7 @@ create table Eventos (
     id_evento int auto_increment primary key,
     nombre varchar(100),
     duracion int,
-    multiJG boolean
+    multiJG int
 );
 
 insert into Jugadores (nombre, email, fecha_registro, contrasenia, admin) values
