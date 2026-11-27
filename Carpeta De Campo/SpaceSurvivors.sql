@@ -33,6 +33,13 @@ create table Sesiones (
     foreign key (id_jugador) references Jugadores(id_jugador)
 );
 
+
+create table TipoEnemigos (
+    id_tipoEN int auto_increment primary key,
+    nombre varchar(100),
+    descripcion varchar(255)
+);
+
 create table Enemigos (
     id_enemigo int auto_increment primary key,
     nombre varchar(100),
@@ -43,11 +50,6 @@ create table Enemigos (
     foreign key (id_tipoEN) references TipoEnemigos(id_tipoEN)
 );
 
-create table TipoEnemigos (
-    id_tipoEN int auto_increment primary key,
-    nombre varchar(100),
-    descripcion varchar(255)
-);
 
 create table TipoProyectil (
     id_proyectil int auto_increment primary key,
